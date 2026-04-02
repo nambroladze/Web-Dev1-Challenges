@@ -1,4 +1,4 @@
-import { products } from "./data.js";
+import { products } from "./data/db.js";
 
 const productGrid = document.querySelector(".product-grid");
 
@@ -43,9 +43,7 @@ function createProductCard(product) {
 }
 
 function addProductToCart(product) {
-  console.log(`${product.id} - adding in the cart`);
   let cartItems = JSON.parse(localStorage.getItem("cartItems"));
-
   if (!cartItems) {
     cartItems = [{ id: product.id, quantity: 1 }];
   } else {

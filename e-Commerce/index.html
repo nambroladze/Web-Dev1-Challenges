@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -20,9 +20,15 @@
           <a href="#" class="nav-link">Contact</a>
         </nav>
         <div class="header-actions">
-          <button class="icon-button" aria-label="Search">🔍</button>
           <button
-            onclick="window.location.href='./cart.html'"
+            class="icon-button"
+            aria-label="Search"
+            onclick="displayArray()"
+          >
+            🔍
+          </button>
+          <button
+            onclick="window.location.href = './cart/cart.html'"
             class="icon-button"
             aria-label="Cart"
           >
